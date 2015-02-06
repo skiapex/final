@@ -1,0 +1,18 @@
+
+<h1><%= @clinician.occupation %> <%= @clinician.first_name %> <%= @clinician.last_name %></h1>
+
+	<p>Gender: <%= @clinician.gender %></p>
+
+	<p>Email: <%= @clinician.email %></p>
+
+	<p>Password: <%= @clinician.password %></p>
+
+	<p>Office number: <%= @clinician.office_number %></p>
+
+	<p>Mobile number: <%= @clinician.mobile_number %></p>
+
+	<p>Emergency message: <%= @clinician.emergency_message %></p>
+
+	<p><a href="/clinician/" class="btn btn-default"> Index </a></p>
+
+	<p><a href="/clinician/<%= clinician.id %>/edit" class="btn btn-default"> Edit </a></p>

@@ -1,0 +1,13 @@
+<h2> Clinicians </h2>
+
+<p><a href="/clinician/new" class="btn btn-default">Create New
+</a></p>
+
+<%# @clinicians = Clinician.all %>
+
+<% @clinicians.each do |clinician| %>
+
+
+	<p><a href="/clinician/<%= clinician.id %>/edit"><%= clinician.occupation %> <%= clinician.first_name %> <%= clinician.last_name %></a></p>
+
+<% end %>

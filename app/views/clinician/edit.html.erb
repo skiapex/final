@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<h2> Edit details for <%= @clinician.occupation %> <%= @clinician.first_name %> <%= @clinician.last_name %> </h2>
+<form action="/clinician" method = "PATCH">
+
+  <div class="form-group">
+    <label for="first_name">First name of new clinician</label>
+    <input type="text" class="form-control" id="first_name" placeholder="Enter first name"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Last name of new clinician</label>
+    <input type="text" class="form-control" id="last_name" placeholder="Enter occupation"</label>
+  </div>
+
+  <div class="form-group">
+     <label for="occupation">Occupation of new clinician</label>
+    <input type="text" class="form-control" id="occupation" placeholder="Enter occupation"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender of new clinician</label>
+    <input type="integer" class="form-control" id="gender" placeholder="Enter gender"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="text" class="form-control" id="password" placeholder="Enter password"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="office_number">Office number of new clinician</label>
+    <input type="text" class="form-control" id="office_number" placeholder="Enter office number"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="mobile_number">Mobile number of new clinician</label>
+    <input type="text" class="form-control" id="mobile_number" placeholder="Enter mobile number"</label>
+  </div>
+
+  <div class="form-group">
+    <label for="emergency_message">Emergency message of new clinician</label>
+    <input type="text" class="form-control" id="emergency_message" placeholder="Enter emergency message"</label>
+  </div>
+
+<p><button type="submit" class="btn btn-default">Submit</button></p>
+
+<p><a href="/clinician/<%= clinician.id %>" class="btn btn-default"> Back to Clinician Information </a></p>
+</form>
